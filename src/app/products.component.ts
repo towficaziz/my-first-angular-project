@@ -19,4 +19,8 @@ export class ProdectsComponent {
   onAddProduct(){
     this.products.push(this.productName);
   }
+
+  OnRemoveProduct(productName: string){
+    this.products= this.products.filter(p=> p !== productName);
+  }
 }
